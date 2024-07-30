@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to my first website</title>
+<style>
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+h2, h3 {
+  text-align: left;
+}
+img {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 100px;
+  border-radius: 50%; 
+}
+.orange-background { 
+  background-color: orange; 
+  padding: 10px; 
+}
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+}
+a {
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <h1 class="orange-background"><span style="color: white;">Welcome to my first website</span></h1>
+  <h2 >Xin chào tôi tên là <span style="color: red;">Long</span> thật là may mắn khi được tham gia vào lớp Web Public của CLB HIT</h2>
+  <img src="https://scontent.fhan3-2.fna.fbcdn.net/v/t1.6435-9/118590036_656147258643027_287933549065510800_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGke0G7GLH262Dch312s_7nHNcz8dX4l68c1zPx1fiXr6A-KsoevFKP_EtQA3z5A3xz5TV72-HS3UvB-04alBn1&_nc_ohc=f4fsRfT6pi0Q7kNvgElPEPy&_nc_ht=scontent.fhan3-2.fna&oh=00_AYDYkfzhkUJtrylQQ_5mzQo7XpciS1yqzt__rDyO1HCffw&oe=66B9DA5A" alt="Avatar">
+  <h3>Đôi chút về tôi nè</h3>
+  <ul>
+    <li>Họ Tên: Phạm Hải Long</li>
+    <li>Quê quán: Thái Nguyên</li>
+    <li>Lớp: KHMT02</li>
+    <li>Khoá: K18</li>
+    <li>Ngành: CNTT</li>
+  </ul>
+  <p>Các cậu có thể liên hệ với tôi thông qua facebook này nè: <a href="https://web.facebook.com/profile.php?id=100027432755937" style="color: blue;">Long Pham</a></p>
+  <p>Tớ cũng dùng cả instagram này nữa các cậu cho tớ xin 1 follow nhé ❤️ <a href="https://www.instagram.com/longp_30.4/" style="color: blue;">longp_30.4</a></p>
+  <h3>Sở thích của tớ là:</h3>
+  <ol>
+    <li>Ăn uống</li>
+    <li>Đi chơi</li>
+    <li>Thể thao</li>
+    <li>Coding</li>
+  </ol>
+  <p>Tớ cũng có crush rồi đấy 😂 Để tớ bật mí cho cậu nha 😏 <a href="https://www.instagram.com/jennierubyjane/" class="button">Crush tớ ở đây nè</a></p>
+  <p>Tớ học cũng rất giỏi đấy nha !!!</p>
+  <table border="1">
+    <tr>
+      <th>STT</th>
+      <th>Môn</th>
+      <th>Điểm</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Toán</td>
+      <td id="diemToan"><a href="#" class="button" onclick="hienDiem('diemToan', 9.5)">Click để xem</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Văn</td>
+      <td id="diemVan"><a href="#" class="button" onclick="hienDiem('diemVan', 8.0)">Click để xem</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Anh</td>
+      <td id="diemAnh"><a href="#" class="button" onclick="hienDiem('diemAnh', 9.5)">Click để xem</a></td>
+    </tr>
+  </table>
+  </div>
+
+  <script>
+    function hienDiem(id, diem) {
+      document.getElementById(id).innerHTML = diem;
+    }
+    </script>
+
+</body>
+</html>

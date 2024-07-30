@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-google {
+            background-color: #4285F4;
+            color: white;
+        }
+        .login-facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+        .login-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-submit {
+            background-color: #ff6600;
+            color: white;
+        }
+        .show-password-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .show-password-container input {
+            margin-right: 10px;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Đăng nhập</h2>
+        <button class="login-google">Đăng nhập với Google</button>
+        <button class="login-facebook">Đăng nhập với Facebook</button>
+        <p>Hoặc điền các thông tin dưới đây:</p>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Mật khẩu">
+        <div class="show-password-container">
+            <input type="checkbox" id="show-password">
+            <label for="show-password">Hiện mật khẩu</label>
+        </div>
+        <button class="login-submit" onclick="login()">Đăng nhập</button>
+        <div id="message" class="message"></div>
+    </div>
+    <script>
+        document.getElementById('show-password').addEventListener('change', function() {
+            var passwordInput = document.getElementById('password');
+            if (this.checked) {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        });
+
+        function login() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var message = document.getElementById('message');
+
+            // Dummy credentials for example purposes
+            var validEmail = "vietngu@gmail.com";
+            var validPassword = "vietngu";
+
+            if (email === validEmail && password === validPassword) {
+                message.style.color = 'green';
+                message.innerText = "Đăng nhập thành công!";
+            } else {
+                message.style.color = 'red';
+                message.innerText = "Email hoặc mật khẩu không đúng!";
+            }
+        }
+    </script>
+</body>
+</html>

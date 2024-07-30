@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    
+  }
+  
+
+  header {
+    background-color: white;
+  }
+
+  .social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .social-icons li {
+    margin-right: 15px;
+  }
+  
+  .social-icons a {
+    text-decoration: none; 
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav li {
+    margin-right: 15px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 36px;
+    padding-right: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    width: 70%;
+    height: 60%;
+  }
+
+  .search-bar img{
+    max-width: 100%;
+    height: auto;
+    text-align: right;
+  }
+  
+  .search-bar input {
+    border: none;
+    padding: 5px;
+    flex-grow: 1; 
+    text-align: left;
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+    text-align: right;
+    margin-top: 1%;
+  }
+  
+  .user-actions ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  .user-actions li {
+    margin-left: 15px;
+    position: relative;
+  }
+
+  .user-actions img{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+  }
+  
+  .user-actions a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .user-actions img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .user-actions a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .user-actions a[title]:hover::after {
+    opacity: 1;
+  } 
+  
+  .notification {
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    right: -5px;
+  }
+  
+  .shipping-info {
+    text-align: right;
+    font-size: 12px;
+  }
+  
+  .language-currency select {
+    margin-left: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .main-nav {
+    background-color: #fff;
+    padding: 1%;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-nav li {
+    margin: 0 15px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 0;
+  }
+  
+
+  .hero {
+    background-image: url("https://www.josbuu.com/assets/images/banner-1.jpg");
+    background-size: cover ;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    padding-bottom: 20px;
+  }
+  
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-content {
+    flex: 1;
+    padding: 8%;
+    text-align: left;
+    align-items: center;
+
+  }
+  
+  .hero-content h2 {
+    color: #f55555;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #7b7b7b;
+  }
+  
+  .hero-content a {
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    background-color: #f55555;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;;
+  }
+  
+  .btn:hover {
+    background-color: #d93939;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+
+  
